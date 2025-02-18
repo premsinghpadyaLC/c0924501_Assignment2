@@ -1,5 +1,5 @@
  Assignment 2 - Part 1: Initial Implementation
-
+ 
  Overview
 
 In Part 1 of this assignment, I have created three classes: “Person”, “BlogPost”, and “Blog”. These classes are designed according to the specified requirements, with proper input validation, a builder pattern, and deserialization support. Additionally, I have written unit tests to validate the constructors and the proper functionality of the “Person” and “BlogPost” classes.
