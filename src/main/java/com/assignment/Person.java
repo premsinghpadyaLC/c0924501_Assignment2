@@ -1,12 +1,16 @@
 package com.assignment;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+
+@JsonDeserialize(builder = Person.PersonBuilder.class)
 public class Person {
-    
-    private String id;
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String gender;
+
+    private final String id;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
+    private final String gender;
 
     private Person(PersonBuilder builder) {
         this.id = builder.id;
@@ -14,34 +18,19 @@ public class Person {
         this.lastName = builder.lastName;
         this.age = builder.age;
         this.gender = builder.gender;
-        
-        // Validate the required fields
+
         if (id == null || firstName == null || lastName == null || age < 0 || gender == null) {
             throw new IllegalArgumentException("Invalid data");
         }
     }
 
-    public String getId() {
-        return id;
-    }
+    public String getId() { return id; }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
+    public int getAge() { return age; }
+    public String getGender() { return gender; }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    // Builder class
+    @JsonPOJOBuilder(withPrefix = "")
     public static class PersonBuilder {
         private String id;
         private String firstName;

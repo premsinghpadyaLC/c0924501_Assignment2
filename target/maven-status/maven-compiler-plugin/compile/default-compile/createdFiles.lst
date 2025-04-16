@@ -1,4 +1,5 @@
 com\assignment\BlogPost.class
+com\assignment\MainClass.class
 com\assignment\Blog.class
 com\assignment\BlogPost$BlogPostBuilder.class
 com\assignment\BlogPost$Builder.class

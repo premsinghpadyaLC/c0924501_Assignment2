@@ -1,0 +1,12 @@
+[
+    {
+        "id": "B001",
+        "authorId": "P001",
+        "postContent": "This is the first blog post content."
+    },
+    {
+        "id": "B002",
+        "authorId": "P002",
+        "postContent": "This is the second blog post content."
+    }
+]
