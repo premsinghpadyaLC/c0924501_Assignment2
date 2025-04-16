@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.assignment.BlogPostTest
+Test set: com.assignment.BlogTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.140 s -- in com.assignment.BlogPostTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in com.assignment.BlogTest
